@@ -1,0 +1,70 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  background: #ddd;
+}
+
+.calculator {
+  max-width: 30rem;
+  padding: 0.4rem;
+  margin: 2rem auto;
+}
+
+.calculator h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+.screen {
+  background: #fff;
+  border: 0.1rem solid #434242;
+  border-radius: 0.2rem;
+  color: #434242;
+  height: 4.8rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.3rem;
+  overflow: hidden;
+}
+
+.key {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.keys {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.6rem 0.8rem;
+}
+
+.keys .equals {
+  background: #22a39f;
+}
+
+.keys .alt-btn {
+  background: #474e68;
+}
+.keys button {
+  background: #222222;
+  border: none;
+  border-radius: 0.2rem;
+  color: #fff;
+  padding: 0.8rem 0.4rem;
+}
+
+@media screen and (min-width: 600px) {
+  .calculator {
+    margin: 7rem auto;
+    padding: 0;
+  }
+}
